@@ -18,12 +18,12 @@ Add the ICAO code for the station to monitor (only one allowed).
 Open a CLI window on the directory the files are in. Enter the script files to the board's root directory with [ampy])(https://github.com/scientifichackers/ampy) and the corresponding serial port. Shown are the commands for Windows and COM6:
 
 ```
-ampy -p COM6 -b 112500 boot.py
-ampy -p COM6 -b 112500 main.py
-ampy -p COM6 -b 112500 ICAO.dat
-ampy -p COM6 -b 112500 wifi.dat
-ampy -p COM6 -b 112500 esp8266_i2c_lcd.py
-ampy -p COM6 -b 112500 lcd_api.py
+ampy -p COM6 -b 112500 put boot.py
+ampy -p COM6 -b 112500 put main.py
+ampy -p COM6 -b 112500 put ICAO.dat
+ampy -p COM6 -b 112500 put wifi.dat
+ampy -p COM6 -b 112500 put esp8266_i2c_lcd.py
+ampy -p COM6 -b 112500 put lcd_api.py
 ```
 
 Connect the PCF8574 backpack board to the ESP microcontroller:

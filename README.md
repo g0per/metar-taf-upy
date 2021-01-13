@@ -11,7 +11,7 @@ Using [python_lcd](https://github.com/dhylands/python_lcd) for display comms.
 
 Get the Micropython firmware on your Espressif microcontroller. [For ESP32](https://micropython.org/download/esp32/). If using a WROGER board, make sure you get the SPIRAM firmware version.
 
-Add the 2.4 WiFi SSID(s) and password(s) to wifi.dat.
+Add the 2.4 WiFi SSID(s) and password(s) to wifi.dat (multiple allowed)
 
 Add the ICAO code for the station to monitor (only one allowed).
 

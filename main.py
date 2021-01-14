@@ -58,7 +58,7 @@ def compruebaactu(texto,intervalo):
     hora = reloj()
     ahora = hora[3]+hora[4]
 
-    print('Hora: {ahora} // Reporte: {horatexto}'.format(horatexto=horatexto,ahora=ahora))
+    print('Hora: {ahora} // Hora reporte: {horatexto}'.format(horatexto=horatexto,ahora=ahora))
 
     horanum = int(horatexto)
     ahoranum = int(ahora)
@@ -122,7 +122,7 @@ def main():
         from machine import reset
         from boot import hora,reloj
         with open('log.dat','wb') as archivo:
-            texto = hora(reloj()) + 'main.py' + e
+            texto = hora(reloj()) + ' main.py ' + e
             archivo.write(texto)
         reset()
 

@@ -64,7 +64,10 @@ def reloj():
     return currenttime
 
 def hora(str_reloj):
-    print('Hora: {yyyy}{mm}{dd} {hh}{min}:{ss}'.format(yyyy=str_reloj[0],mm=str_reloj[1],dd=str_reloj[2],hh=str_reloj[3],min=str_reloj[4],ss=str_reloj[5]))
+    texto = str_reloj[0]+str_reloj[1]+str_reloj[2] +' '+ str_reloj[3]+str_reloj[4] +':'+ str_reloj[5]
+    print('Hora: {texto}'.format(texto=texto))
+    return texto
+
 
 def main():
     try:
@@ -75,7 +78,7 @@ def main():
     except Exception as e:
         from machine import reset
         with open('log.dat','wb') as archivo:
-            texto = hora(reloj()) + 'boot.py' + e
+            texto = reloj() + ' boot.py ' + e
             archivo.write(texto)
 if __name__ == '__main__':
     main()
